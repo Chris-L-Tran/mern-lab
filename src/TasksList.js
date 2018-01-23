@@ -16,15 +16,20 @@ class TasksList extends Component {
     .cath(err => console.log(err))
     .then((res) => {
       this.setState({
-        paintings: res.data
+        tasks: res.data
       })
     })
   }
   render () {
+    if (this.state.tasks) {
+      let tasks = this.state.tasks.map((tasks, i) => {
+        return <TaskDetails task={tasks} key={i} />
+      })
+    }
     return (
       <div>
         <div className='TaskDetails'>
-          {TaskDetails}
+          {tasks}
         </div>
       </div>
     )
