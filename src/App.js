@@ -4,6 +4,8 @@ import './App.css'
 import Home from './Home'
 import NavBar from './NavBar'
 import {Route, Switch} from 'react-router-dom'
+import TaskDetails from './TaskDetails'
+import TasksList from './TasksList'
 
 class App extends Component {
   render () {
