@@ -21,8 +21,9 @@ class TasksList extends Component {
     })
   }
   render () {
+    let tasks
     if (this.state.tasks) {
-      let tasks = this.state.tasks.map((tasks, i) => {
+      tasks = this.state.tasks.map((tasks, i) => {
         return <TaskDetails task={tasks} key={i} />
       })
     }
