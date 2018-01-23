@@ -19,7 +19,7 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route
-              absolutepath='/'
+              exact path='/'
               component={Home}
             />
             <Route
