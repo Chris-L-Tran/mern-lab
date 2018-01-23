@@ -6,6 +6,7 @@ import NavBar from './NavBar'
 import {Route, Switch} from 'react-router-dom'
 import TaskDetails from './TaskDetails'
 import TasksList from './TasksList'
+import About from './About'
 
 class App extends Component {
   render () {
@@ -25,6 +26,10 @@ class App extends Component {
             <Route
               path='/Tasks/:title'
               component={TaskDetails}
+            />
+            <Route
+              path='/About'
+              component={About}
             />
           </Switch>
 
