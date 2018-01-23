@@ -1,0 +1,6 @@
+form{
+  display: flex;
+  flex-flow: row;
+  align-items: space-between;
+  margin: 20px;
+}

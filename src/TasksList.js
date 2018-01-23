@@ -29,7 +29,7 @@ class TasksList extends Component {
     }
     return (
       <div>
-        <div className='TaskDetails'>
+        <div className='TasksList'>
           {tasks}
         </div>
       </div>
