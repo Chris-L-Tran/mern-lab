@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import Home from './Home'
 import NavBar from './NavBar'
+import {Route, Switch} from 'react-router-dom'
 
 class App extends Component {
   render () {
@@ -15,6 +16,17 @@ class App extends Component {
         <p className='App-intro'>
           <NavBar />
           <Home />
+          <Switch>
+            <Route
+              path='/Tasks'
+              component={TasksList}
+            />
+            <Route
+              path='/Tasks/:title'
+              component={TaskDetails}
+            />
+          </Switch>
+
         </p>
       </div>
     )
