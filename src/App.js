@@ -17,8 +17,11 @@ class App extends Component {
         </header>
         <p className='App-intro'>
           <NavBar />
-          <Home />
           <Switch>
+            <Route
+              absolutepath='/'
+              component={Home}
+            />
             <Route
               path='/Tasks'
               component={TasksList}
