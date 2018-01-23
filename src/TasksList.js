@@ -1,17 +1,20 @@
 import React, {Component} from 'react'
+import TaskDetails from './TaskDetails'
 
 class TasksList extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      title: ''
+      tasks: []
     }
   }
 
   render () {
     return (
       <div>
-        This is the TasksList Page
+        <div className='TaskDetails'>
+          {TaskDetails}
+        </div>
       </div>
     )
   }
