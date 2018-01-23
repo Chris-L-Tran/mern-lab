@@ -7,6 +7,7 @@ import {Route, Switch} from 'react-router-dom'
 import TaskDetails from './TaskDetails'
 import TasksList from './TasksList'
 import About from './About'
+import './App.css'
 
 class App extends Component {
   render () {

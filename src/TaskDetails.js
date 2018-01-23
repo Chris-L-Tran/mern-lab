@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './TaskDetails.css'
 
 class TaskDetails extends Component {
   render () {

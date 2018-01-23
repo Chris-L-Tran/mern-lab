@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Route} from 'react-router-dom'
 import {API} from './urls'
 import axios from 'axios'
+import './AddTask.css'
 
 class AddTask extends Component {
   constructor (props) {

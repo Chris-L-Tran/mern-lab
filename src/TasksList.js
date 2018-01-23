@@ -3,6 +3,7 @@ import TaskDetails from './TaskDetails'
 import {API} from './urls'
 import axios from 'axios'
 import {Route} from 'react-router-dom'
+import './TasksList.css'
 
 class TasksList extends Component {
   constructor (props) {
