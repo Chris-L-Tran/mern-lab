@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import TaskDetails from './TaskDetails'
 import {API} from './urls'
 import axios from 'axios'
+import {Route} from 'react-router-dom'
 
 class TasksList extends Component {
   constructor (props) {
@@ -32,6 +33,7 @@ class TasksList extends Component {
         <div className='TasksList'>
           {tasks}
         </div>
+        <Route component={AddTask} />
       </div>
     )
   }
