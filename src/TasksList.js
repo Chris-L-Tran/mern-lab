@@ -13,7 +13,7 @@ class TasksList extends Component {
 
   componentDidMount () {
     axios.get(API)
-    .cath(err => console.log(err))
+    .catch(err => console.log(err))
     .then((res) => {
       this.setState({
         tasks: res.data
